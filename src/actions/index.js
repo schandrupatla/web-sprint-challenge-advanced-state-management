@@ -6,10 +6,10 @@ export const FETCH_ERROR = "FETCH_ERROR"
 
 
 
-// export const fetchStart =() =>{
-//     console.log("Actions:Start")
-//     return({type:FETCH_START})
-// }
+export const fetchStart =() =>{
+    console.log("Actions:Start")
+    return({type:FETCH_START})
+}
 export const fetchSmurfs = () =>{
     return(dispatch=>{
          dispatch({type:FETCH_START});
@@ -29,8 +29,7 @@ export const addSmurfs = (smurf) =>{
     return({type:ADD_SMURF, payload:smurf})
 }
 export const fetchError =(error)=>{
-    console.log("Error:",error);
-    // return ({type:FETCH_ERROR, payload:error})
+     return ({type:FETCH_ERROR, payload:error})
 }
 
 //Task List:

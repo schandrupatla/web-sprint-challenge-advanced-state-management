@@ -23,7 +23,7 @@ const AddForm = (props) => {
             props.fetchError ( "Name, position and nickname fields are required.");
         }
         else{
-            props.addSmurfs(state)
+            props.addSmurfs(state);
         }
     }
 
